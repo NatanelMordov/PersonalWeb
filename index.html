@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+<link rel="stylesheet" href="style.css">    
+<link rel="stylesheet" href="media.css">
+<link rel="icon" href="./assets/icon.png">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Natanel Mordov</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="ham-nav">
+        <div class="logo">Natanel Mordov</div>
+        <div class="ham-menu">
+            <div class="ham-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic_conteiner">
+            <img src="./assets/profile.png" alt="Natanel profile img" class="pro">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p">Hello, I'm</p>
+            <h1 class="title">Natanel Mordov</h1>
+            <p class="section_text_p2">Full-Stack Developer</p>
+            <div class="btn-conteiner">
+                <button class="btn btn-color"
+                 onclick="window.open('./assets/Doc1.pdf')">Download CV</button>
+                <button class="btn btn-color2" 
+                onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="social-conteiner">
+                <img src="./assets/linkedin.png" alt="Linkedn img" class="icon1" 
+                onclick="location.href='https://www.linkedin.com/in/natanel-mordov-171a081b5/'">
+                <img src="./assets/github.png" alt="Github img" class="icon" 
+                onclick="location.href='https://github.com/NatanelMordov'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section_text_p2">Get To Know More</p>
+        <h1 class="title">About Me!</h1>
+<div class="section">
+        <div class="about_ditails_container">
+            <div class="about_conteiners">
+            <div class="ditails_container">
+                <img src="./assets/education.png" alt="education Icon" class="icon">
+                <h3>Education</h3>  
+                <p>B.sc Computer Science Student</p>
+            </div>  
+            <div class="ditails_container">
+                <img src="./assets/expirience.png" alt="expireince Icon" class="icon">
+                <h3>Expireince</h3>  
+                <p>Full-Stack Bootcamp</p>
+            </div>  
+        </div>
+        <div class="text_conteiner">
+            <p class="about_par">An ambitious, motivated, responsible and hard-working computer science student with experience in IT support.<br >
+                Proficient in both frontend and backend technologies,<br >
+               I bring a wealth of experience in creating dynamic, responsive and user-friendly interface,<br>
+               with expertise in JavaScript, React.js, Node.js and other programming languages- Java, C, C#.<br >
+               Seeking a junior position in the technology industry to prove my ability, develop and learn, and gain professional experience.</p>
+        </div>
+    </div>
+</div>
+<img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <section id="experience">
+        <p class="section_text_p2">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience_diteils_conteiner">
+            <div class="about_conteiners">
+                <div class="ditails_container flip">
+                    <h2 class="expirience_sub_title">Frontend Development</h2>
+                    <div class="article_conteiner">
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>React</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="ditails_container flip">
+                    <h2 class="expirience_sub_title">Backend Development</h2>
+                    <div class="article_conteiner">
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>Node.js</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>Express.js</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="ditails_container flip">
+                    <h2 class="expirience_sub_title">Programming languages</h2>
+                    <div class="article_conteiner">
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>C</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="ditails_container flip">
+                    <h2 class="expirience_sub_title">Database</h2>
+                    <div class="article_conteiner">
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>MongoDB</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/check.png" alt="check icon" class="icon">
+                            <div>
+                                <h3>mySQL</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p2">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience_diteils_conteiner">
+            <div class="about_conteiners">
+            <div class="ditails_container color_conteiner">
+                <div class="article_conteiner">
+                    <img src="./assets/keeper.jpg" alt="project 1" class="project_img">
+                </div>
+                <h2 class="expirience_sub_title project_title">Keeper-App</h2>
+                <div class="btn-conteiner">
+                    <button class="btn btn-color2 project_btn" onclick="location.href='https://github.com/NatanelMordov/KepperApp'">GitHub</button>
+                </div>
+            </div>
+            <div class="ditails_container color_conteiner">
+                <div class="article_conteiner">
+                    <img src="./assets/token.jpg" alt="project 1" class="project_img">
+                </div>
+                <h2 class="expirience_sub_title project_title">DMN Token-App</h2>
+                <div class="btn-conteiner">
+                    <button class="btn btn-color2 project_btn" onclick="location.href='https://github.com/NatanelMordov/DMN-Token'">GitHub</button>
+                </div>
+            </div>
+            <div class="ditails_container color_conteiner">
+                <div class="article_conteiner">
+                    <img src="./assets/simon.png" alt="project 1" class="project_img">
+                </div>
+                <h2 class="expirience_sub_title project_title">Simon Game</h2>
+                <div class="btn-conteiner">
+                    <button class="btn btn-color2 project_btn" onclick="location.href='https://github.com/NatanelMordov/SimonGame'">GitHub</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+    <section id="contact">
+        <p class="section_text_p2">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact_info_up_conteiner">
+            <div class="contact_info">
+                <img src="./assets/email.png" alt="email icon" class="icon  contact_icon">
+            <p><a href="mailto:natanel1m2@gmail.com">natanel1m2@gmail.com</a></p>
+         </div>
+        </div>
+        <div class="contact_info_up_conteiner">
+            <div class="contact_info">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact_icon">
+            <p><a href="https://www.linkedin.com/in/natanel-mordov-171a081b5/">LinkedIn</a></p>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>&#169;CopyRight 2023 Natanel Mordov</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html> 
