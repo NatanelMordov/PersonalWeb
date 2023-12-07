@@ -1,3 +1,12 @@
+@media screen and (max-width: 1400px) {
+  #profile{
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about_conteiners{
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1200px) {
     #desktop-nav{
         display: none;
@@ -5,4 +14,69 @@
     #ham-nav{
         display: flex;
     }
+    #experience, .experience_diteils_conteiner{
+        margin-top: 2rem;
+    }
+    #profile, .section_text{
+        display: block;
+    }
+    .arrow{
+        display: none;
+    }
+    section, .section_text{
+       height: fit-content; 
+    }
+    section{
+       margin: 0 5%; 
+    }
+    .section_pic_conteiner{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about_conteiners{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 600px){
+    #contact, footer{
+        height: 40vh;
+    }
+    #profile{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article{
+        font-size: 1rem;
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about_conteiners, .contact_info_up_conteiner, .btn-conteiner{
+       flex-wrap: wrap; 
+    }
+    .contact_info{
+        margin: 0;
+    }
+    .contact_info p, .nav-links li a{
+        font-size: 1rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section_pic_conteiner{
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .title{
+        font-size: 2rem;
+    }
+
 }

@@ -182,12 +182,10 @@ section{
 .icon1{
     cursor: pointer;
     height: 50px;
-    
 }
 .icon{
     cursor: pointer;
     height:30px;
-    
 }
 
 /*Buttons*/
@@ -336,6 +334,13 @@ article .icon{
     color: black;
     border-color: rgb(163, 163, 163);
 } 
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    height: 50px;
+}
 
 /*CONTACT*/ 
 #contact{
