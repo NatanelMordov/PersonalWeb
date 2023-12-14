@@ -33,11 +33,14 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    
 }
 .nav-links{
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+
+
 }
 
 a{
@@ -154,6 +157,8 @@ section{
 }
 .pro{
     border-radius: 33%;
+    box-shadow:10px 10px 5px lightgray;
+    
 }
 
 .section_text{
@@ -252,10 +257,14 @@ section{
     padding: 1rem;
     flex: 1;
     background: rgb(255, 255, 255);
-    border-radius: 1rem;
+    border-radius: 5px;
     border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163,163,163);
+    border-color: rgb(226, 226, 226);
     text-align: center;
+    background:#fffffe;
+}
+.ditails_container:hover{
+    border-bottom:#E1C78F 3px solid ;
 }
 .section{
     gap: 4rem;
@@ -267,9 +276,7 @@ section{
     justify-content: center;
     text-align: center;
 }
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
+
 
 /*EXPIRIENCE*/
 #experience{
@@ -305,12 +312,7 @@ article{
 article .icon{
     cursor: default;
 }
-.flip:hover{
-    color: rgb(78, 78, 78);
-    background-color: rgb(242, 242, 242);
-    transition: transform 2s;
-    transform: rotateY(360deg);
-}
+
 
 /*PROJECTS*/
 
