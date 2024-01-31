@@ -17,6 +17,15 @@ html{
 p{
     color: rgb(85, 85, 85);
 }
+.logo{
+    background:linear-gradient(to right, #c6a254 20%, #664c14 80%);
+    background-clip:text;
+    color: transparent;
+    font-size: 2rem;
+}
+.logo:hover{
+    cursor: default;
+}
 
 /*TRANSITION*/
 
