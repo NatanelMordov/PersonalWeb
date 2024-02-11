@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="style.css">    
 <link rel="stylesheet" href="media.css">
 <link rel="icon" href="./assets/icon.png">
+<script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 <body>
     <nav id="desktop-nav">
@@ -22,7 +23,7 @@
     </nav>
     <nav id="ham-nav">
         <div class="logo">Natanel Mordov</div>
-        <div class="ham-menu">
+        <div class="ham-menu ">
             <div class="ham-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -48,7 +49,7 @@
             <div class="btn-conteiner">
                 <button class="btn btn-color"
                  onclick="window.open('./assets/Doc1.pdf')">Download CV</button>
-                <button class="btn btn-color2" 
+                <button class="btn btn-color2 " 
                 onclick="location.href='./#contact'">Contact Me</button>
             </div>
             <div id="social-conteiner">
@@ -73,7 +74,7 @@
             </div>  
             <div class="ditails_container">
                 <img src="./assets/expirience.png" alt="expireince Icon" class="icon">
-                <h3>Expereince</h3>  
+                <h3>Expireince</h3>  
                 <p>Full-Stack Bootcamp</p>
             </div>  
         </div>
@@ -98,33 +99,12 @@
                     <h2 class="expirience_sub_title">Frontend Development</h2>
                     <div class="article_conteiner">
                         <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>React</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>Bootstrap</h3>
+                            <div class="con">
+                                <img src="./assets/icon/html.png" class="item" >
+                                <img src="./assets/icon/css.png" class="item">                                
+                                <img src="./assets/icon/js.png" class="item">                                
+                                <img src="./assets/icon/react.png" class="item">
+                                <img src="./assets/icon/bs.png" class="item">
                             </div>
                         </article>
                     </div>
@@ -133,44 +113,22 @@
                     <h2 class="expirience_sub_title">Backend Development</h2>
                     <div class="article_conteiner">
                         <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>Node.js</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>Express.js</h3>
-                            </div>
-                        </article>
+                           <div class="con">
+                            <img src="./assets/icon/node.png" class="item">
+                            <img src="./assets/icon/ex.png" class="item">
+                            <img src="./assets/icon/net.png" class="item">
+                           </div>
                     </div>
                 </div>
                 <div class="ditails_container flip">
                     <h2 class="expirience_sub_title">Programming languages</h2>
                     <div class="article_conteiner">
                         <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>Java</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>C#</h3>
-                            </div>
-                        </article>
-                         <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>C</h3>
+                            <div class="con">
+                                <img src="./assets/icon/java.png" class="item">
+                                <img src="./assets/icon/cs.png" class="item">
+                                <img src="./assets/icon/c.png" class="item">
+                                <img src="./assets/icon/py.png" class="item">
                             </div>
                         </article>
                     </div>
@@ -179,21 +137,10 @@
                     <h2 class="expirience_sub_title">Database</h2>
                     <div class="article_conteiner">
                         <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>MongoDB</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>PostgreSQL</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/check.png" alt="check icon" class="icon">
-                            <div>
-                                <h3>mySQL</h3>
+                            <div class="con">
+                                <img src="./assets/icon/mongodb.png" class="item">
+                                <img src="./assets/icon/mysql.jpg" class="item">
+                                <img src="./assets/icon/sql.png" class="item">
                             </div>
                         </article>
                     </div>
@@ -276,6 +223,7 @@
         <p>&#169;CopyRight 2023 Natanel Mordov</p>
     </footer>
 
-    <script src="index.js"></script>
+    <script  src="index.js"></script>
+
 </body>
 </html> 

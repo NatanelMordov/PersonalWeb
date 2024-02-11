@@ -9,22 +9,14 @@
 
 body{
     font-family: 'Playfair Display', serif;
+    
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 p{
     color: rgb(85, 85, 85);
-}
-.logo{
-    background:linear-gradient(to right, #c6a254 20%, #664c14 80%);
-    background-clip:text;
-    color: transparent;
-    font-size: 2rem;
-}
-.logo:hover{
-    cursor: default;
 }
 
 /*TRANSITION*/
@@ -63,6 +55,9 @@ a:hover{
     text-underline-offset:1rem ;
 }
 .logo{
+    background:linear-gradient(to right, #c6a254 20%, #664c14 80%);
+    background-clip:text;
+    color: transparent;
     font-size: 2rem;
 }
 .logo:hover{
@@ -166,7 +161,7 @@ section{
 }
 .pro{
     border-radius: 33%;
-    box-shadow:10px 10px 5px lightgray;
+    box-shadow:10px 10px 5px rgb(176, 169, 169);
     
 }
 
@@ -217,17 +212,18 @@ section{
     border-radius: 2rem;
 }
 .btn-color, .btn-color2{
-    border: rgb(85, 85, 85) 0.1rem solid;
+    border: rgb(30, 30, 30) 0.1rem solid;
 }
 .btn-color:hover, .btn-color2:hover{
     cursor: pointer;
 }
 .btn-color, .btn-color2:hover{
-   background: rgb(35, 53, 53);
+   background: rgb(35, 35, 35);
    color: white;
 }
 .btn-color:hover{
-    background: rgb(68, 68, 68);
+    background: rgb(150, 150, 150);
+ 
 }
 .btn-color2{
     background: none;
@@ -270,7 +266,7 @@ section{
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(226, 226, 226);
     text-align: center;
-    background:#fffffe;
+
 }
 .ditails_container:hover{
     border-bottom:#E1C78F 3px solid ;
@@ -387,4 +383,26 @@ article .icon{
  /*FOOTER*/
  footer p{
     text-align: center;
+ }
+
+ .hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+ }
+ .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+ }
+
+ .con{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+ }
+ .item{
+    width: 100%;
+    height: auto; 
  }
