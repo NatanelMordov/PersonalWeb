@@ -269,7 +269,11 @@ section{
 
 }
 .ditails_container:hover{
-    border-bottom:#E1C78F 3px solid ;
+    border-bottom:#E1C78F 3px solid;
+     transform: scale(1.05);
+    transition: transform var(--transition-speed);
+    transform-origin: center center;
+    box-shadow: 5px 5px 5px 5px rgba(12,12,12,0.36);
 }
 .section{
     gap: 4rem;
