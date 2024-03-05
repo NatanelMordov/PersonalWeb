@@ -270,7 +270,7 @@ section{
 }
 .ditails_container:hover{
     border-bottom:#E1C78F 3px solid;
-     transform: scale(1.05);
+    transform: scale(1.05);
     transition: transform var(--transition-speed);
     transform-origin: center center;
     box-shadow: 5px 5px 5px 5px rgba(12,12,12,0.36);
@@ -331,11 +331,12 @@ article .icon{
 .color_conteiner{
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
+    
 }
 .project_img{
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
 }
 .project_title{
     margin: 1rem;
