@@ -1,5 +1,8 @@
 # PersonalWeb
 
+![Portfolio Screenshot](https://github.com/NatanelMordov/PersonalWeb/blob/main/assets/portfolioImg.png)
+
+
 Welcome to my personal portfolio! This project showcases my skills, projects, and contact information.
 ## Table of Contents
 - [About](#about)
@@ -18,4 +21,4 @@ If you'd like to get in touch with me, this section will contain my contact info
 - HTML
 - CSS
 - JavaScript
-![Portfolio Screenshot]
+
