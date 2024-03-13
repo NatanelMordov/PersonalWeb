@@ -136,7 +136,9 @@ a:hover{
     text-decoration: underline;
     text-underline-offset:1rem ;
 }
-
+.color{
+    color: beige;
+}
 /*SECTIONS*/
 
 section{
@@ -319,7 +321,8 @@ section{
       text-align: center;
       opacity: 0;
       transition: opacity .35s ease;
-      background-color: #716039;
+      font-size: large;
+     
     }
     .container:hover .button {
       opacity: 1;
