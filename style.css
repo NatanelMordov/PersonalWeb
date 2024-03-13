@@ -212,17 +212,17 @@ section{
     border-radius: 2rem;
 }
 .btn-color, .btn-color2{
-    border: rgb(30, 30, 30) 0.1rem solid;
+    border:#c6a254 0.1rem solid;
 }
 .btn-color:hover, .btn-color2:hover{
     cursor: pointer;
 }
 .btn-color, .btn-color2:hover{
-   background: rgb(35, 35, 35);
+   background:#E1C78F;
    color: white;
 }
 .btn-color:hover{
-    background: rgb(150, 150, 150);
+    background:#c6a254;
  
 }
 .btn-color2{
@@ -261,17 +261,16 @@ section{
 .ditails_container{
     padding: 1rem;
     flex: 1;
-    background: rgb(255, 255, 255);
+    /* background: rgb(255, 255, 255);
     border-radius: 5px;
     border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(226, 226, 226);
+    border-color: rgb(226, 226, 226); */
     text-align: center;
 
 }
 .ditails_container:hover{
     border-bottom:#E1C78F 3px solid;
     transform: scale(1.05);
-    transition: transform var(--transition-speed);
     transform-origin: center center;
     box-shadow: 5px 5px 5px 5px rgba(12,12,12,0.36);
 }
@@ -286,6 +285,97 @@ section{
     text-align: center;
 }
 
+.container {
+    position: relative;
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: 250px;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  }
+  
+  .container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+
+    transform: scale(1);
+    transform-origin: center center;
+    box-shadow: 5px 5px 12px 12px rgba(0, 0, 0, 0.36);
+  }
+  
+    .button {
+      position: absolute;
+      width: 120px;
+      right: 150px;
+      top: 195px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity .35s ease;
+      background-color: #716039;
+    }
+    .container:hover .button {
+      opacity: 1;
+    }
+    
+    .Btn {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+        position: relative;
+        overflow: hidden;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: all .3s;
+      }
+      
+      .svgContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        letter-spacing: 0.8px;
+        border-radius: 10px;
+        transition: all .3s;
+        border: 1px solid rgba(156, 156, 156, 0.466);
+      }
+      
+      .BG {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #181818;
+        z-index: -1;
+        border-radius: 10px;
+        pointer-events: none;
+        transition: all .3s;
+      }
+      
+      .Btn:hover .BG {
+        transform: rotate(35deg);
+        transform-origin: bottom;
+      }
+      
+      .Btn:hover .svgContainer {
+        background-color: rgba(156, 156, 156, 0.466);
+        backdrop-filter: blur(4px);
+      }
+  
 
 /*EXPIRIENCE*/
 #experience{
@@ -328,15 +418,16 @@ article .icon{
 #projects{
     position: relative;
 }
-.color_conteiner{
+/* .color_conteiner{
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
     
-}
+} */
 .project_img{
-    border-radius: 0.5rem;
-    width: 100%;
-    height: auto;
+    border-radius: 0.2rem;
+    width: 330px;
+    height: 250px;
+    gap: 15px;
 }
 .project_title{
     margin: 1rem;
@@ -345,9 +436,12 @@ article .icon{
 .project_btn{
     color: black;
     border-color: rgb(163, 163, 163);
+    display: none;
+    transition: 0.4s ease
+
 } 
 .center{
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -407,6 +501,7 @@ article .icon{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
  }
+
  .item{
     width: 100%;
     height: auto; 
