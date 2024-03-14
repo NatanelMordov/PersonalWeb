@@ -306,8 +306,7 @@ section{
   
   .container:hover .overlay {
     display: block;
-    background: rgba(0, 0, 0, .3);
-
+    backdrop-filter: blur(3px);
     transform: scale(1);
     transform-origin: center center;
     box-shadow: 5px 5px 12px 12px rgba(0, 0, 0, 0.36);
